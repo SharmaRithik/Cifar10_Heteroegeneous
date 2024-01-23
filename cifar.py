@@ -91,8 +91,6 @@ def display_matrices_during_forward_pass(model, image):
         else:
             print(f"Skipping non-dense layer: {layer.name}")
 
-# Rest of your script...
-
 # Main execution
 x_train, y_train, x_test, y_test = load_cifar10_dataset()
 model = create_model()
@@ -108,7 +106,5 @@ print("True Class:", y_test[0][0])
 custom_predicted_class = custom_prediction(model, first_image)
 print("Custom Predicted Class:", custom_predicted_class[0])
 
-
 # Display matrices and intermediate results during forward pass
 display_matrices_during_forward_pass(model, first_image)
-
